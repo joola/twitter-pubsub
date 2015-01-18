@@ -1,0 +1,43 @@
+{
+  "name": "twitter-pubsub",
+  "preferGlobal": false,
+  "version": "0.0.1",
+  "author": "Or Weinberger <or@joo.la>",
+  "description": "Get tweets via twitter-api and funnel through a rabbitmq queue to elasticsearch",
+  "engine": "node >= 0.10.x",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/joola/twitter-pubsub.git"
+  },
+  "bugs": "http://github.com/joola/twitter-pubsub/issues",
+  "contributors": [
+    {
+      "name": "Or Weinberger",
+      "email": "or@joo.la",
+      "url": "http://joo.la"
+    }
+  ],
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "elasticsearch",
+    "twitter",
+    "rabbitmq",
+    "queue"
+  ],
+  "dependencies": {
+    "amqp": "*",
+    "elasticsearch": "*",
+    "twitter": "*",
+    "js-yaml": "^3.2.5",
+    "mocha": "*"
+  },
+  "engines": {
+    "node": "0.10.*",
+    "npm": "1.4.*"
+  },
+  "license": "MIT"
+}
